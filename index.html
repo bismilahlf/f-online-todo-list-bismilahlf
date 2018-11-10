@@ -3,12 +3,38 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>To-Do List</title>
+  <title>Lista de Tareas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-  <script src="main.js"></script>
 </head>
+
 <body>
+  <header>
+    <div class="date">
+      <span class="date__number">9</span>
+      <span class="date__day">lunes</span>
+      <span class="date__month">abril 2018</span>
+    </div>
+  </header>
   
+  <main class="main">
+    <ul class="task-list"></ul>
+  </main>
+  
+  <footer>
+    <button class="modal__trigger-button">+</button>
+
+    <!-- MODAL -->
+    <div class="modal">
+      <span>Nueva tarea</span>
+      <input type="text" class="modal__input">
+      <button class="modal__add-button">Añadir</button>
+    </div>
+
+  </footer>
+
+  
+
+  <script src="main.js"></script>
 </body>
 </html>
