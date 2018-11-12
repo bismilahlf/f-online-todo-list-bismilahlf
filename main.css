@@ -1,3 +1,27 @@
 /* .modal {
   display: none;
 } */
+
+.task-list {
+  list-style-type: none;
+}
+
+.completed-task {
+  text-decoration: line-through;
+  color: lightgray;
+}
+
+.completed-task:before {
+  background: url(check.svg) center center no-repeat;
+  background-size: 12px;
+  border: 2px solid #099D8D;
+}
+
+ul li:before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #85ECE1;
+  border-radius: 20px;
+}

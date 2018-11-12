@@ -11,6 +11,12 @@ newTaskButton.addEventListener('click', addNewTask);
 function addNewTask() {
   newListElement = document.createElement('li');
   newTask = document.createTextNode(taskName.value);
-  newListElement.appendChild(newTask);
+  newListElement.append(newTask);
+  newListElement.addEventListener('click', completeTask);
   taskList.appendChild(newListElement);
+}
+
+function completeTask(e) {
+  e.target.classList.toggle('completed-task');
+  
 }
