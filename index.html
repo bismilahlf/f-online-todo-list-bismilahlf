@@ -18,7 +18,8 @@
   </header>
   
   <main class="main">
-    <ul class="task-list"></ul>
+    <ul class="task-list__current"></ul>
+    <ul class="task-list__completed"></ul>
   </main>
   
   <footer class="footer">
@@ -26,11 +27,13 @@
 
     <!-- MODAL -->
     <div class="modal">
-      <span>Nueva tarea</span>
-      <input type="text" class="modal__input">
-      <button class="modal__add-button">Añadir</button>
+      <div class="modal__background"></div>
+      <div class="modal__content">
+        <span>Nueva tarea</span>
+        <input type="text" class="modal__input">
+        <button class="modal__add-task-button">Añadir</button>
+      </div>
     </div>
-
   </footer>
 
   
