@@ -1,43 +1,51 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+  <title>Lista de Tareas</title>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Lista de Tareas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 
 <body>
-  <header>
-    <div class="date">
-      <span class="date__number">9</span>
-      <span class="date__day">lunes</span>
-      <span class="date__month">abril 2018</span>
-    </div>
-  </header>
-  
-  <main class="main">
-    <ul class="task-list__current"></ul>
-    <ul class="task-list__completed"></ul>
-  </main>
-  
-  <footer class="footer">
-    <button class="modal__trigger-button">+</button>
-
-    <!-- MODAL -->
-    <div class="modal">
-      <div class="modal__background"></div>
-      <div class="modal__content">
-        <span>Nueva tarea</span>
-        <input type="text" class="modal__input">
-        <button class="modal__add-task-button">Añadir</button>
+  <div class="page__wrapper">
+    <header class="header">
+      <img src="images/logo_adalab.jpg" alt="logo adalab" class="header-logo">
+      <div class="date">
+        <span class="date-number"></span>
+        <span class="date-day"></span>
+        <span class="date-month"></span>
+        <span class="date-year"></span>
       </div>
-    </div>
-  </footer>
+    </header>
 
-  
+    <main class="main">
+      <ul class="task-list__current"></ul>
+      <ul class="task-list__completed"></ul>
+    </main>
+
+    <footer class="footer">
+      <button class="modal__trigger-button">
+        <i class="fas fa-plus trigger-button__icon"></i>
+      </button>
+
+      <!-- MODAL -->
+      <div class="modal">
+        <div class="modal__background"></div>
+        <div class="modal__content">
+          <span>Nueva tarea</span>
+          <input type="text" class="modal__input">
+          <button class="modal__add-task-button">Añadir</button>
+        </div>
+      </div>
+    </footer>
+  </div>
+
 
   <script src="main.js"></script>
 </body>
+
 </html>

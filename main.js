@@ -20,10 +20,9 @@ modalBackground.addEventListener('click', toggleModal);
 
 
 // AÑADE UNA TAREA A LA LISTA
-newTaskButton.addEventListener('click', addNewTask);
-
 function addNewTask() {
   newListElement = document.createElement('li');
+  newListElement.classList.add('list__element');
   newTask = document.createTextNode(taskName.value);
   newListElement.appendChild(newTask);
   newListElement.addEventListener('click', toggleTask);
@@ -31,6 +30,9 @@ function addNewTask() {
 
   toggleModal();
 }
+
+newTaskButton.addEventListener('click', addNewTask);
+
 
 // MARCA/DESMARCA UNA TAREA COMO COMPLETADA 
 function toggleTask(e) {
