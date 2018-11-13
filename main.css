@@ -6,20 +6,26 @@ body {
 }
 
 .page__wrapper {
+  font-family: 'Roboto', sans-serif;
   background: white;
   width: 320px;
   height: 580px;
   border: 1px solid #099D8D;
+  border-radius: 6px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 
 .header {
-  height: 82px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 20px 30px 10px 20px;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #00D9C4;
+  border-left: 0;
 }
 
 .header-logo {
@@ -27,12 +33,46 @@ body {
   width: 50px;
 }
 
+.date {
+  display: flex;
+  flex-direction: row;
+}
+
+.date-number {
+  color: #099D8D;
+  font-size: 42px;
+  display: inline-block;
+}
+
+.date__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: rgb(105, 101, 101);
+  margin-left: 8px;
+}
+
+.date-day {
+  font-weight: 500;
+}
+
+.month-year__wrapper {
+  font-weight: 400;
+  font-size: 14px;
+}
+
 .main {
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  padding: 25px;
 }
 
 .modal__trigger-button {
-  border: 3px solid #14D9C4;
+  border: 3px solid #00D9C4;
   border-radius: 50px;
   font-size: 30px;
   color: #099D8D;
@@ -74,12 +114,17 @@ body {
 .task-list__current, .task-list__completed {
   list-style-type: none;
   margin: 0;
+  padding: 0;
 }
 
 .list__element {
+  color: rgb(105, 101, 101);
+  font-size: 18px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .completed-task {
@@ -91,7 +136,7 @@ body {
   background: url(images/check.svg) center center no-repeat;
   background-size: 15px;
   border: 2px solid #099D8D;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 ul li:before {
@@ -99,9 +144,9 @@ ul li:before {
   display: inline-block;
   width: 30px;
   height: 30px;
-  border: 2px solid #14D9C4;
+  border: 2px solid #00D9C4;
   border-radius: 50px;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .footer {

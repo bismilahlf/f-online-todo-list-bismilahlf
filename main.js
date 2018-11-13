@@ -44,7 +44,7 @@ months[10] = "Noviembre";
 months[11] = "Diciembre";
 var currentMonth = months[date.getMonth()];
 var monthTag = document.querySelector('.date-month');
-monthTag.innerHTML = currentMonth;
+monthTag.innerHTML = currentMonth + ', ';
 
 var currentYear = date.getFullYear();
 var yearTag = document.querySelector('.date-year');
