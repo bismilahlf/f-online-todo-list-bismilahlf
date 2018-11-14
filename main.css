@@ -134,6 +134,9 @@ body {
   border-radius: 5px;
   height: 35px;
   margin-bottom: 30px;
+  color: white;
+  font-size: 18px;
+  padding-left: 10px;
 }
 
 .modal__add-button {
