@@ -3,10 +3,10 @@
 var triggerModalButton = document.querySelector('.modal__trigger-button');
 var modal = document.querySelector('.modal');
 var modalBackground = document.querySelector('.modal__background');
-var newTaskButton = document.querySelector('.modal__add-task-button');
+var newTaskButton = document.querySelector('.modal__add-button');
 var taskListCurrent = document.querySelector('.task-list__current');
 var taskListCompleted = document.querySelector('.task-list__completed');
-var taskName = document.querySelector('.modal__input');
+var inputContent = document.querySelector('.modal__input');
 var newListElement;
 var newTask;
 
@@ -64,10 +64,11 @@ modalBackground.addEventListener('click', toggleModal);
 function addNewTask() {
   newListElement = document.createElement('li');
   newListElement.classList.add('list__element');
-  newTask = document.createTextNode(taskName.value);
+  newTask = document.createTextNode(inputContent.value);
   newListElement.appendChild(newTask);
   newListElement.addEventListener('click', toggleTask);
   taskListCurrent.appendChild(newListElement);
+  inputContent.value = '';
 
   toggleModal();
 }
